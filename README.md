@@ -5,6 +5,10 @@ Export (most of) your Bitwarden items into KeePass database.
 It uses official [bitwarden-cli](https://help.bitwarden.com/article/cli/) client to export your items from Bitwarden vault and move them into your KeePass database - that includes logins (with TOTP seeds, URIs, custom fields, attachments, notes) and secure notes.
 
 ## Install
+Clone this repository
+```
+git clone https://github.com/Pschittt/bitwarden-to-keepass.git
+```
 Run docker-compose
 ```
 docker-compose up -d
