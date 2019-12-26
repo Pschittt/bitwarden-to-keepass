@@ -1,3 +1,6 @@
+## (Source) Work based on the python tool available here :
+[https://github.com/davidnemec/bitwarden-to-keepass](https://github.com/davidnemec/bitwarden-to-keepass)
+
 # bitwarden-to-keepass
 Export (most of) your Bitwarden items into KeePass database.
 
