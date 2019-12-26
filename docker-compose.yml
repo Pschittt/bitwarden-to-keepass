@@ -1,0 +1,18 @@
+version: '3.0'
+
+services:
+  bitwarden-to-keepass:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ${DIR_BW_DATA}:/root/.config/Bitwarden CLI
+      - ${DIR_KP_EXPORT}:/bitwarden-to-keepass/export
+    command: /bin/bash
+    tty: true
+    stdin_open: true
+    environment:
+      BW_SESSION: ${BW_SESSION}
+      DB_PATH: ${DB_PATH}
+      DB_PWD: ${DB_PWD}
+      BW_PATH: ${BW_PATH}
